@@ -19,10 +19,10 @@ function App() {
         <Route path="/cart">
           <Cart/>
         </Route>
-        <Route path="/products">
+        <Route exact path="/products">
           <Products/>
         </Route>
-        <Route exact path="/products/:id" children={<SingleProducts/>}/>
+        <Route  path="/products/:id" children={<SingleProducts/>}/>
         <Route path="/checkout">
           <Checkout/>
         </Route>
