@@ -74,9 +74,16 @@ const Filters = () => {
           <input type="range" name="price" onChange={updateFilters} min={min} max={max} value={price} />
         </div>
         {/*end price input */}
+        {/*shipping input */}
+            <div className="form-control shipping">
+              <label htmlFor="shipping">free shipping</label>
+              <input type="checkbox" name="shipping" id="shipping" onChange={updateFilters} checked={shipping} />
+            </div>
+        {/*end shipping input */}
 
   
       </form>
+      <button type='button' className='clear-btn' onClick={clearFilters}>clear</button>
     </div>
   </Wrapper>
 }
